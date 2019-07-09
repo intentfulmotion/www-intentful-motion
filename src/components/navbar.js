@@ -5,15 +5,25 @@ import './style.scss';
 
 import Logo from '../images/logo.svg'
 
-const Navbar = () => (
-	<div className="hero-head is-hidden-mobile">
-		<nav className="navbar is-transparent">
-			<div className="container">
+const Navbar = () => {
+	const toggleMobileMenu = () => {
+		document.getElementById("mobile-menu").classList.toggle('is-active')
+		document.getElementById("navbar-menu").classList.toggle('is-active')
+	}
+
+	return (
+		<div className="container">
+			<nav className="navbar is-transparent" role="navigation" aria-label="main navigation">
 				<div className="navbar-brand">
 					<a href="/">
 						<figure className="image is-128x128">
 							<img src={Logo} alt="Intentful Motion" />
 						</figure>
+					</a>
+					<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" id="mobile-menu" onClick={() => {toggleMobileMenu()}}>
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
 					</a>
 				</div>
 				<div id="navbar-menu" className="navbar-menu">
@@ -46,9 +56,9 @@ const Navbar = () => (
 						<a className="navbar-item">Blog</a>
 					</div>
 				</div>
-			</div>
-		</nav>
-	</div>
-);
+			</nav>
+		</div>
+	)
+};
 
 export default Navbar;
