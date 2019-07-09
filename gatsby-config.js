@@ -2,8 +2,9 @@ module.exports = {
 	siteMetadata: {
 		title: 'Intentful Motion',
 		author: 'Nishanth Samala',
-		description: 'A Project to bootstrap your next Gatsby + Bulma site.',
-		keywords: `Web developer, Web, Developer, CSS, HTML, JS, Javascript, Gatsby, Bulma Developer, CSS3, HTML5, Seo, Starter`,
+		siteUrl: 'https://intentfulmotion.com',
+		description: 'The safety net for micromobility',
+		keywords: `Micromobility, smart lighting, smart cities, urban planning, electric bicycles, scooters, e-bikes, longboards, e-skate, electric longboards, skateboards, onewheel, boosted`,
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',
@@ -22,8 +23,8 @@ module.exports = {
 				name: 'Intentful Motion',
 				short_name: 'Intentful Motion',
 				start_url: '/',
-				background_color: '#2980b9',
-				theme_color: '#2980b9',
+				background_color: '#0B2D39',
+				theme_color: '#0B2D39',
 				display: 'standalone',
 				icon: 'src/images/logo.svg',
 				orientation: 'portrait'
