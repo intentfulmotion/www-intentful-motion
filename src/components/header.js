@@ -19,7 +19,7 @@ const Header = ({ siteTitle }) => (
 			<div className="container center">
 				<div className="content has-text-centered">
 					<a className="amp-product" href="https://amp.intentfulmotion.com">aMp</a>
-					<h6 className="is-subtitle is-size-6">Looking for our smart lighting kit? Find it at it's new home here</h6>
+					<h6 className="is-subtitle is-size-6">Looking for our smart lighting kit? Find it at its new home here</h6>
 				</div>
 			</div>
 		</div>
